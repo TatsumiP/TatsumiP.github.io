@@ -1,0 +1,91 @@
+.firstview {
+    position: relative;
+    height: 56vw;
+    width: 100vw;
+    max-height: 784px;
+    max-width: 1400px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.fv-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.fv-background-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.fv-text-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.fv-effect1 {
+    height: 100%;
+    width: 100%;
+}
+
+.fv-effect2 {
+    position: absolute;
+    top: 0.065%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.fv-text {
+    position: absolute;
+    height:100%;
+    width: 45%;
+    z-index: 2;
+    left: 0%;
+    text-align: center;
+}
+
+.fv-text h1 {
+    margin: 20% auto;
+    font-size: calc(20px + 28 * (100vw - 360px) / 1120);
+    font-weight: bold;
+    color: #000000;
+    -webkit-text-stroke: 0.2px rgb(168, 169, 155);
+    line-height: 1rem;
+    margin-top: 27%;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fv-text p {
+    margin: 20% auto;
+    font-size: calc(12px + 12 * (100vw - 360px) / 1120);
+    font-weight: 500;
+    line-height: 1.3rem;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    -webkit-text-stroke: 0.2px rgb(103, 104, 89);
+
+}
+
+.fv-button {
+    position: absolute;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+}
+
+.fv-button:hover {
+    background: white;
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+}
