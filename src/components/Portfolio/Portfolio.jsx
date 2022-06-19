@@ -3,7 +3,7 @@ import "./Portfolio.css";
 import "../../App.css";
 import atom from "../../img/atom.png";
 import profile1 from "../../img/profile1.jpg";
-// import profile1 from "../../img/atom.png";
+import Github from "../../img/github.png";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
@@ -35,8 +35,9 @@ const Portfolio = () => {
             <h5>使用技術</h5>
             <p>React Redux Node.js FIrebase
               CloudFunctions SendGridAPI StripeAPI </p>
-            <div className="module-spacer-s"/>
-            <p><a href="">github</a></p>
+            <a href="https://github.com/TatsumiP" target="_blank" rel="noopener noreferrer">
+              <img src={Github} alt="my Github" />
+              </a>
           </li>
           <li>
             <h4>ホテル検索アプリ(楽天API)</h4>
@@ -47,14 +48,13 @@ const Portfolio = () => {
             <h5>使用技術</h5>
             <p>React Redux TypeScript Node.js FIrebase
               CloudFunctions 楽天API </p>
-              <div className="module-spacer-s"/>
-            <p><a href="">github</a></p>
+              <a href="https://github.com/TatsumiP" target="_blank" rel="noopener noreferrer">
+              <img src={Github} alt="my Github" />
+              </a>
+
           </li>
         </ul>
       </div>
-      <div className="module-spacer-l"/>
-      <div className="module-spacer-l"/>
-      <div className="module-spacer-l"/>
     </div>
 
 

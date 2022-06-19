@@ -2,59 +2,78 @@ import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper-bundle.min.js'
 import 'swiper/swiper.min.css'
+import 'swiper/components/navigation/navigation.min.css'
 import { Pagination } from "swiper";
-// import "swiper/css/pagination";
-// import 'swiper/modules/pagination/pagination.min.css'
+import atom from "../../img/atom.png";
 import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
+// import 'swiper/swiper.scss';
+// import "swiper/css";
+// import "swiper/css/pagination";
 
 const Testimonial = () => {
+    //     const Swiper = new Swiper('.swiper', {
+    //     navigation: {
+    //       nextEl: '.swiper-button-next',
+    //       prevEl: '.swiper-button-prev',
+    //     },
+    // });
+
     const clients = [
         {
             img: profilePic1,
             review:
-                "PomPom"
+                "PomPom PomPom PomPomPien..."
         },
         {
             img: profilePic2,
             review:
-                "PomPom"
+                "PomPom PomPom PomPomPien..."
         },
         {
             img: profilePic3,
             review:
-                "PomPom"
+                "PomPom PomPom PomPomPien..."
         },
     ];
 
     return (
-        <div className="t-wrapper" id="testimonial">
-            <div className="t-heading">
-                <span>Clients always get </span>
-                <span>Exceptional Work </span>
-                <span>from me...</span>
-            <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-            <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+        <div className="tm-wrapper" id="testimonial">
+            {/* -----heading----- */}
+            <div className="heading-container">
+                <div className="heading-board">
+                    <img src={atom} alt="" className="icon" />
+                    <h2>Testimonial</h2>
+                </div>
+            </div>
+
+            {/* -----main----- */}
+            <div className="swiper">
+                <div className="swiper-wrapper">
+                    <Swiper
+                        modules={[Pagination]}
+                        slidesPerView={1}
+                        pagination={{ clickable: true }}
+                        navigation={true}
+                    >
+                        {clients.map((client, index) => {
+                            return (
+                                <SwiperSlide key={index}>
+                                    <div className="testimonial">
+                                        <img src={client.img} alt="client images" />
+                                        <span>{client.review}</span>
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+                    </Swiper>
+                </div>
+                <div className="swiper-pagination"></div>
 
             </div>
-            <Swiper
-                modules={[Pagination]}
-                slidersPerView={1}
-                pagination={{ clickable: true }}
-            >
-                {clients.map((client, index) => {
-                    return (
-                        <SwiperSlide key={index}>
-                            <div className="testimonial">
-                                <img src={client.img} alt="" />
-                                <span>{client.review}</span>
-                            </div>
-                        </SwiperSlide>
-                    );
-                })}
-            </Swiper>
         </div>
     );
 };

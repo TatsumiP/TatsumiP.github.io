@@ -10,9 +10,9 @@ const Intro = () => {
 
   return (
 
-    <div className="intro" id="Intro">
+    <div className="intro" id="intro">
 
-      {/* heading area */}
+      {/* ----- heading area ----- */}
       <div className="heading-container">
         <div className="heading-board">
           <img src={atom} alt="intro-heading-icon" className="icon" />
@@ -20,48 +20,90 @@ const Intro = () => {
         </div>
       </div>
 
-      {/* flex area */}
+      {/* ----- first-flex-area ----- */}
+      <div className="i-first-wrapper">
+        <div className="i-flex-container">
 
-      <div className="i-flex-area">
-
-      {/* left text side */}
-
-        <div className="i-left">
-          <div className="i-name">
-            <span>瓜生真吾</span>
-            <span>
-              1991年9月5日生まれの30歳。<br />
-              大学中退後、小説を書きながら映画バーの
-              バーテンダーとして働いてた。<br />
-
-              2021年1月にダウン症の息子を授かった
-              ことをきっかけにバーテンダーを辞め、
-              育児に専念。<br />
-              育児の傍ら、Reactを独学で学ぶ。<br />
-              2022年に、フロントエンジニアになるため、
-              就職活動を始める。<br />
-
-              趣味は読書と映画鑑賞と料理……だが、最近は
-              育児が趣味になりつつある。<br />
-            </span>
+          {/* left text side */}
+          <div className="i-small-container">
+            <img src={myimage3} alt="myimage" />
           </div>
-          <Link to="contact" smooth={true} spy={true}>
-            <button className="button i-button">Hire me</button>
-          </Link>
-          {/* social icons */}
-          <div className="i-icons">
-            <a href="https://github.com/TatsumiP" target="_blank" rel="noopener noreferrer">
-              <img src={Github} alt="" />
-            </a>
-            <img src={Instagram} alt="" />
+
+          {/* right image side */}
+          <div className="i-large-container">
+            <div className="i-la-co-wrapper">
+              <span>
+                瓜生真吾。<br />
+                1991年9月5日生まれの30歳。<br />
+                育児の傍ら、Reactを独学で習得。<br />
+                <br />
+                長所は自走力。<br />
+                趣味は読書と映画鑑賞と料理……だが、最近は育児が趣味になりつつある。
+              </span>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* right image side */}
+      {/* ----- second-flex-area ----- */}
+      <div className="i-second-wrapper">
+        <div className="i-flex-container">
 
-        <div className="i-right">
-          <img src={myimage3} alt="myimage" />
+          {/* left text side */}
+          <div className="i-large-container">
+            <div className="i-la-co-wrapper">
+              <span>
+                大学中退後、小説を書きながら映画バーの
+                バーテンダーとして働いてた。<br />
+                <br />
+                2021年1月にダウン症の息子を授かった
+                ことをきっかけにバーテンダーを辞め、
+                育児に専念。<br />
+                <br />
+                2022年に、フロントエンジニアになるため、
+                就職活動を始める。<br />
+              </span>
+            </div>
+          </div>
+          {/* right image side */}
+          <div className="i-small-container">
+            {/* <img src={myimage3} alt="myimage" /> */}
+          </div>
         </div>
+      </div>
+
+      {/* ----- third-flex-area ----- */}
+      <div className="i-third-wrapper">
+        <div className="i-flex-container">
+
+          {/* left text side */}
+          <div className="i-small-container">
+            {/* <img src={myimage3} alt="myimage" /> */}
+          </div>
+
+          {/* right image side */}
+          <div className="i-large-container">
+            <div className="i-la-co-wrapper">
+              <span>
+                バーテンダーとして働く中、<br />
+                1991年9月5日生まれの30歳。<br />
+                育児の傍ら、Reactを独学で習得。<br />
+                <br />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="i-button-container">
+      <Link to="contact" smooth={true} spy={true}>
+        <button className="button i-button">Hire me</button>
+      </Link>
+      </div>
+      <div className="i-icons">
+        <a href="https://github.com/TatsumiP" target="_blank" rel="noopener noreferrer">
+          <img src={Github} alt="my Github" />
+        </a>
+        <img src={Instagram} alt="my Instagram" />
       </div>
     </div>
   );

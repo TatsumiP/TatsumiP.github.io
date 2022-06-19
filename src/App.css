@@ -16,7 +16,8 @@
   background-image: url("./img/denim.webp");
 }
 
-    /* ------- general css -------*/
+/* ------- heading css -------*/
+
 
 .heading-container {
   height: 150px;
@@ -31,7 +32,7 @@
   width: 20rem;
   height: 50%;
   top: 30%;
-  background: linear-gradient(135deg, #ffffff 50.71%, #dae9ea 99.76%);
+  background: linear-gradient(150deg, #e0dbb2 50.71%, #866b46 99.76%);
   border: 4px solid #B4C1C6;
   box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.8);
   border-radius: 0px 62px 62px 0px;
@@ -48,10 +49,81 @@
   display: inline;
   position: relative;
   margin: auto 2rem;
-  top:2px;
+  top: 2px;
   font-weight: bold;
   font-size: 30px;
+  color: #443f08;
 }
+
+/* -----grid css ----- */
+
+.grid {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grig-item {
+  list-style: none;
+}
+
+.grid-col-2>.grid-item {
+  width: 50%;
+}
+
+.grid-col-3>.grid-item {
+  width: 33.3%;
+}
+
+.grid-col-4>.grid-item {
+  width: 25%;
+}
+
+.feature {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.feature-headline {
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.feature-img {
+  margin: 0 0 20px;
+}
+
+.feature-description {
+  margin: 0;
+  text-align: left;
+}
+
+/* ----- animetion css -----*/
+
+.fadein {
+  position: relative;
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+}
+
+/* ----- module css ----- */
 
 .module-spacer-s {
   height: 1.5rem;
@@ -70,13 +142,13 @@
   width: 60%;
 }
 
-    /* ------- general component css ------- */
+/* ------- component css ------- */
 
 .button {
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  background: linear-gradient(180deg, #ffbb01 26.71%, #d47816 99.36%);
   box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
   border-radius: 34px;
-  border: none;
+  border: 1px solid #8a4602;
   color: white;
   font-size: 16px;
   padding: 11px 26px 11px 26px;
@@ -87,11 +159,21 @@
   cursor: pointer;
   border: 1px solid var(--orange);
   color: var(--orange);
+  box-shadow: 0 0 0 #bbb;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
+
+  /*  ----- for IPhone ----- */
   .App {
     padding: 0.5rem 1rem;
+  }
+}
 
+@media screen and (min-width: 561px) and (max-width: 768px) {
+
+  /*  ----- for Tablet ----- */
+  .App {
+    padding: 0;
   }
 }

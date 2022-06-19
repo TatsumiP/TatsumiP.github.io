@@ -2,71 +2,143 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   flex: 1;
-  gap: 16rem;
-  height: 900px;
-  width: 85vw;
+  width: 100vw;
   max-width: 1400px;
   margin: 0 auto;
-  background: #e7f0f4;
+  background-image: url("../../img/vintage-wallpaper.webp");
+  background-color: rgba(19, 174, 102, 0.6);
+  background-blend-mode: hard-light;
+
 }
 
-/*----- heading area -----*/
+/*----- first-flex-area -----*/
 
+.i-first-wrapper {
+  height: 14rem;
+  width: 85%;
+  margin: 0 auto;
+}
 
-/*----- flex area -----*/
-
-.i-flex-area {
+.i-flex-container {
   display: flex;
-  height: 700px;
-  margin-top: -15.4rem;
+  justify-content: space-evenly;
 }
 
 /* left side */
-.i-left {
+
+.i-small-container {
+  flex: 1;
+  position: relative;
+  left: -20px;
+  width: 30%;
+  max-width: 300px;
+}
+
+.i-small-container img {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 80px;
+  box-shadow: 0px 8px 12px 3px rgba(29, 33, 27, 0.42);
+
+}
+
+
+/* right side styling */
+
+.i-large-container {
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 1;
-  margin-left: 1rem;
-  padding: 1.5rem 0rem 0rem 1rem;
-  background-color: #ffffff ;
-  border-radius: 80px;
+  width: 95%;
+  max-width: 1800px;
+  padding: 1.5rem 0rem 1rem 1rem;
+  border: 2px solid #cacaca;
+  background: linear-gradient(150deg, #dfdfc6 60.71%, #d4cab7 95.76%);
+  border-radius: 20px;
+  box-shadow: 0px 8px 18px 3px rgba(27, 30, 33, 0.42);
+  overflow: hidden;
 }
 
 
-.i-left::before {
-  content:"経歴";
+.i-large-container::before {
+  content: "自己紹介";
   position: relative;
-  width:5rem;
-  height: 1.5rem;
-  margin: -0.5rem auto;
-  text-align: center;
+  top: -15%;
+  left: -1.6rem;
+  width: 100%;
+  height: 15%;
+  padding: 1rem 0 0 1.6rem;
+  text-align: left;
   font-size: 1rem;
-  font-weight: 500;
-  background-color: yellow;
-  border: 1px solid rgb(200, 200, 200);
-  z-index:2;
+  font-weight: 600;
+  color: #f3ebe4;
+  background-color: #4d3c0d;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  z-index: 2;
 }
 
-.i-name {
+.i-la-co-wrapper {
   display: flex;
   flex-direction: column;
-  width:83%;
-  margin-top:1rem;
+  width: 95%;
+  margin-top: -1rem;
 }
 
-.i-name> :first-child {
-  color: var(--black);
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.i-name> :nth-child(2) {
-  font-size: 0.7rem;
+.i-la-co-wrapper>span {
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--black);
-  margin-top: 0.4rem;
+}
+
+/* ----- second-flex-area ----- */
+.i-second-wrapper {
+  height: 14rem;
+  width: 85%;
+  margin: 2rem auto;
+}
+
+/* left side */
+.i-second-wrapper .i-large-container {
+  padding: 1.5rem 0rem 1rem 1rem;
+  margin: 0 2rem 0 -1rem;
+}
+
+.i-second-wrapper .i-large-container::before {
+  content: "経歴";
+  top: -1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* right side styling */
+
+.i-second-wrapper .i-small-container {
+  left: 0px;
+}
+
+  /* ----- third-flex-area ----- */
+  .i-third-wrapper {
+    height: 14rem;
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+  .i-third-wrapper .i-large-container::before {
+    content: "志望動機";
+    top: -1.5rem;
+    padding-bottom: 1rem;
+  }
+
+
+/*----- under flex-area -----*/
+
+.i-button-container {
+  margin: 0 auto;
 }
 
 .i-button {
@@ -88,54 +160,82 @@
   cursor: pointer;
 }
 
-/* right side styling */
-.i-right {
-  flex: 1;
-  position: relative;
-  margin: 7% -5% 7% 5%;
-}
+@media screen and (max-width: 560px) {
 
-.i-right> :first-child {
-  width:76%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 80px;
-}
-
-
-
-/* blur */
-.blur {
-  position: absolute;
-  width: 22rem;
-  height: 14rem;
-  border-radius: 50%;
-  background: #edd0ff;
-  filter: blur(212px);
-  z-index: -9;
-  top: -18%;
-  left: 56%;
-  filter: blur(72px);
-}
-
-@media screen and (max-width: 480px) {
-  .Intro {
+  /*  ----- for IPhone ----- */
+  .i-flex-container {
     flex-direction: column;
-    gap: 15rem;
-    height: 34rem;
   }
 
-  .i-left {
-    left: 1.5rem;
+  .i-first-wrapper {
+    height: 11rem;
+  }
+
+  .i-small-container {
+    min-width: 150px;
+    margin: 0 auto;
+  }
+
+  .i-large-container {
+    left: -1rem;
+  }
+
+  .i-large-container::before {
+    top: -1.9rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .i-la-co-wrapper>span {
+    margin-top: -0.5rem;
+    font-size: 0.6rem;
+  }
+
+/* ----- second-flex-area ----- */
+
+  .i-second-wrapper .i-flex-container {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+  }
+
+  .i-second-wrapper .i-small-container  {
+    display: none;
+  }
+
+  .i-second-wrapper .i-large-container  {
+    left: 0rem;
+  }
+
+  /* ----- third-flex-area ----- */
+  .i-third-wrapper {
+    height: 14rem;
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+  .i-icons>* {
+    transform: scale(0.3);
+  }
+}
+
+@media screen and (min-width: 561px) and (max-width: 768px) {
+
+  /*  ----- for Tablet ----- */
+  .i-first-wrapper {
+    height: 15rem;
+  }
+
+  .i-la-co-wrapper {
+    margin-left: -15px;
+    max-width: 450px;
+  }
+
+  .i-la-co-wrapper>span {
+    font-size: 0.8rem;
   }
 
   .i-icons>* {
     transform: scale(0.3);
 
-  }
-
-  .i-right {
-    transform: scale(0.8);
-    left: 1rem;
   }
 }

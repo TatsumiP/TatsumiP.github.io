@@ -1,20 +1,21 @@
 .contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
     height: 80vh;
-    margin-top: 4rem;
-      /* scroll */
-  padding-top: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-image: url("../../img/vintage-wallpaper.webp");
+    background-color: rgba(19, 174, 102, 0.6);
+    background-blend-mode: hard-light;
 }
 
-.c-right{
+.c-main-container {
     display: flex;
     justify-content: center;
     position: relative;
     flex: 1;
+    top: 11%;
 }
 
-.c-right>form
+.c-main-container>form
 {
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@
 
 }
 
-.c-right .user{
+.c-main-container .user{
     width: 20rem;
     height: 2rem;
     padding: 0.3em;
@@ -37,11 +38,6 @@ textarea{
     height: 4rem!important;
 }
 
-.c-blur1{
-    top: 1rem;
-    left: 8rem;
-}
-
 @media screen and (max-width: 480px) {
     .contact-form{
         padding: 0;
@@ -49,7 +45,7 @@ textarea{
         gap: 5rem;
         height: 40rem;
     }
-    .c-right .user{
+    .c-main-container .user{
         width: 16rem;
     }
 

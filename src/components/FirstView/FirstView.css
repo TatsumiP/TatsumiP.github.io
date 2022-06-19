@@ -41,46 +41,51 @@
     width: 100%;
 }
 
-.fv-text {
+.fv-effect {
+    height: 100%;
+    width: 100%;
+}
+
+.fv-text-container {
     position: absolute;
-    height:100%;
+    height: 70%;
     width: 45%;
     z-index: 2;
     left: 0%;
     text-align: center;
 }
 
-.fv-text h1 {
+.fv-text-container h1 {
     margin: 20% auto;
-    font-size: calc(20px + 28 * (100vw - 360px) / 1120);
+    font-size: calc(1.4rem + 2.5 * (100vw - 70vw) / 70);
     font-weight: bold;
-    color: #000000;
+    color: #fffae3;
     -webkit-text-stroke: 0.2px rgb(168, 169, 155);
-    line-height: 1rem;
+    line-height: 2.5rem;
     margin-top: 27%;
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
-.fv-text p {
-    margin: 20% auto;
-    font-size: calc(12px + 12 * (100vw - 360px) / 1120);
-    font-weight: 500;
-    line-height: 1.3rem;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-    color: #000000;
-    -webkit-text-stroke: 0.2px rgb(103, 104, 89);
-
+.fv-button-container {
+    position: absolute;
+    height: 30%;
+    width: 45%;
+    z-index: 3;
+    left: 0%;
+    top: 70%;
+    text-align: center;
 }
 
 .fv-button {
-    position: absolute;
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    background: linear-gradient(180deg, #fdc10f 26.71%, #dc7d1f 99.36%);
     box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-    border-radius: 34px;
-    border: none;
+    border-radius: 68px;
+    border: 1px solid #8a6f3a;
     color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
+    height: 4rem;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 22px 8px 22px;
 }
 
 .fv-button:hover {
@@ -88,4 +93,46 @@
     cursor: pointer;
     border: 1px solid var(--orange);
     color: var(--orange);
+}
+
+@media screen and (max-width: 560px) {
+
+    /*  ----- for IPhone ----- */
+
+    .fv-text-container {
+        width: 55%;
+    }
+
+    .fv-text-container h1 {
+        margin: auto auto;
+        padding-top: 10%;
+        font-size: 0.95rem;
+        line-height: 1.2rem;
+    }
+
+    .fv-button-container {
+        width: 55%;
+    }
+
+    .fv-button {
+        height: 2rem;
+        font-size: 12px;
+        padding: 8px 12px 8px 12px;
+    }
+}
+
+@media screen and (min-width: 561px) and (max-width: 768px) {
+
+    /*  ----- for Tablet ----- */
+    .fv-text-container h1 {
+        margin: 23% auto;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    .fv-button {
+        height: 3rem;
+        font-size: 16px;
+        padding: 8px 14px 8px 14px;
+    }
 }
