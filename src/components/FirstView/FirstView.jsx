@@ -1,8 +1,6 @@
 import React from "react";
 import "./FirstView.css";
 import FirstViewImg from "../../img/FirstViewImg.png";
-import FirstViewEffect1 from "../../img/FirstViewEffect1.png";
-import FirstViewEffect2 from "../../img/FirstViewEffect2.png";
 import FirstViewEffect from "../../img/FirstViewEffect.png";
 
 const FirstView = () => {

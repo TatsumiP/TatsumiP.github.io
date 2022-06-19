@@ -16,7 +16,7 @@ const Portfolio = () => {
 
       <div className="heading-container">
         <div className="heading-board">
-          <img src={atom} alt="" className="icon"/>
+          <img src={atom} alt="heading icon" className="icon"/>
           <h2>Portfolio</h2>
         </div>
       </div>
@@ -28,7 +28,7 @@ const Portfolio = () => {
           <li>
             <h4>オリジナル雑貨・ハンコECサイト</h4>
             <div className="module-spacer-s"/>
-            <img src={profile1} alt="my-ecsite-demo" />
+            <img src={profile1} alt="my ecsite demo" />
             <h5>説明</h5>
             <p>ReactとNode.jsで作ったECデモサイト。
               今後妻がオリジナル雑貨とイギリスの手作り雑貨をメインに実際に運用していく予定。</p>

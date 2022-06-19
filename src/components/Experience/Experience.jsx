@@ -25,7 +25,7 @@ const Experience = () => {
 
       <div className="heading-container">
         <div className="heading-board">
-          <img src={atom} alt="" className="icon" />
+          <img src={atom} alt="heading icon" className="icon" />
           <h2>Experience</h2>
         </div>
       </div>
@@ -138,7 +138,7 @@ const Experience = () => {
           <li>
             <div className="ex-graph"/>
             <div className="ex-inner-graph"/>
-            <p className="fukidashi"> 最低限扱えます。</p>
+            <p className="fukidashi"> ストップモーションアニメの作成などをPhotoshopで行っておりました。</p>
             <h5>Photoshop</h5>
             <img src={photoshop} alt="Photoshop icon" />
           </li>

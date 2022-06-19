@@ -15,7 +15,7 @@ const Intro = () => {
       {/* ----- heading area ----- */}
       <div className="heading-container">
         <div className="heading-board">
-          <img src={atom} alt="intro-heading-icon" className="icon" />
+          <img src={atom} alt="heading-icon" className="icon" />
           <h2>About Me</h2>
         </div>
       </div>

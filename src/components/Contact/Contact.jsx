@@ -1,8 +1,7 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import atom from "../../img/atom.png";
 import emailjs from "@emailjs/browser";
-import { themeContext } from "../../Context";
 
 const Contact = () => {
   const form = useRef();
@@ -48,10 +47,6 @@ const Contact = () => {
           <textarea name="message" className="user" placeholder="Message" />
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
-          <div
-            className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
-          ></div>
         </form>
       </div>
     </div>
