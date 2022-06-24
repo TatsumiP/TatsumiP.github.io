@@ -41,6 +41,14 @@
   border: 1px solid #000000;
 }
 
+.pf-main-container ul li a img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: -5px 0 10px 25px;
+  border: none;
+}
+
 .pf-main-container ul li h4,h5 {
   font-weight: bold;
   height: 3rem;

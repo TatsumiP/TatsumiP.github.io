@@ -19,7 +19,7 @@ const Header = () => {
         <a href="https://github.com/TatsumiP" target="_blank" rel="noopener noreferrer">
           <img src={Github} alt="my Github" />
         </a>
-        <a href="https://github.com/TatsumiP" target="_blank" rel="noopener noreferrer">
+        <a href="" target="_blank" rel="noopener noreferrer">
           <img src={Instagram} alt="my Instagram" />
         </a>
       </div>

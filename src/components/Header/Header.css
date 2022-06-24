@@ -154,7 +154,7 @@ ul li {
 /* ----- toggle-menu ----- */
 .toggle-menu {
   position: absolute;
-  height: 
+  height:
   100vh;
   width: 100vw;
   max-width: 1400px;
@@ -211,9 +211,26 @@ ul li {
     margin: 1rem auto;
   }
 
+
+  /* ----- toggle-menu ----- */
+  .toggle-menu {
+    display: block;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    top: 8%;
+    left: 4%;
+  }
+  #toggle-check:checked~#navbar {
+    display: block;
+    left: -5%;
+    background-color:rgba(0, 0, 0, 0.4);
+  }
+
   /* --- navbar setting --- */
 #navbar {
-  left: 100%;
+  display:none;
+  left: 150%;
   top: -125px;
   height: 120vh;
   width: 110vw;
@@ -257,25 +274,14 @@ padding-left: 7px;
   border-radius: 0;
 }
 #navbar ul li:nth-child(5) img {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
+  top: -1px;
   margin: -5px auto 5px;
 }
 #navbar ul li:nth-child(5) h3 {
   font-size: 0.8rem;
   margin: 0 5px 0 0;
-}
-
-  /* ----- toggle-menu ----- */
-.toggle-menu {
-  display: block;
-  position: fixed;
-  top: 8%;
-  left: 4%;
-}
-#toggle-check:checked~#navbar {
-  left: -5%;
-  background-color:rgba(0, 0, 0, 0.4);
 }
 }
 

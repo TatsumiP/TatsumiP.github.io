@@ -2,6 +2,7 @@ import React from "react";
 import "./FirstView.css";
 import FirstViewImg from "../../img/FirstViewImg.png";
 import FirstViewEffect from "../../img/FirstViewEffect.png";
+import myresume from "../../pdf/myresume.pdf";
 
 const FirstView = () => {
     return (
@@ -16,14 +17,12 @@ const FirstView = () => {
             </div>
             <div className="fv-text-container">
                 <h1 className="fadein">
-                    React * SDGs ⇒<br />
-                    子どもたちの未来
+                    SDGsをITで<br />
+                    実現する
                 </h1>
-
-
             </div>
             <div className="fv-button-container">
-                <a href="" download="瓜生真吾の履歴書">
+                <a href="../../pdf/myresume.pdf" download="瓜生真吾_履歴書+職務経歴書+スキルシート">
                     <button className="fv-button">download CV</button>
                 </a>
             </div>
