@@ -2,7 +2,6 @@ import React from "react";
 import "./FirstView.css";
 import FirstViewImg from "../../img/FirstViewImg.png";
 import FirstViewEffect from "../../img/FirstViewEffect.png";
-import myresume from "../../pdf/myresume.pdf";
 
 const FirstView = () => {
     return (
@@ -22,7 +21,7 @@ const FirstView = () => {
                 </h1>
             </div>
             <div className="fv-button-container">
-                <a href="https://tatsumip.github.io/static/media/myresume.b53cf70e.pdf" target="_blank" download="瓜生真吾_履歴書+職務経歴書+スキルシート">
+                <a href="https://tatsumip.github.io/static/media/myresume.f98a403a.pdf" target="_blank" download="瓜生真吾_履歴書+職務経歴書+スキルシート">
                     <button className="fv-button">download CV</button>
                 </a>
             </div>
