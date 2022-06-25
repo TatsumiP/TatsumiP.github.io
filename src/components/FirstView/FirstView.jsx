@@ -22,7 +22,7 @@ const FirstView = () => {
                 </h1>
             </div>
             <div className="fv-button-container">
-                <a href="../../pdf/myresume.pdf" download="瓜生真吾_履歴書+職務経歴書+スキルシート">
+                <a href="https://tatsumip.github.io/src/pdf/myresume.pdf" target="_blank" download="瓜生真吾_履歴書+職務経歴書+スキルシート">
                     <button className="fv-button">download CV</button>
                 </a>
             </div>
