@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "a0fcbd98bc55fe1537ed",
-    "url": "/static/css/main.d7856695.chunk.css"
+    "revision": "c2a92d8a2110197b548c",
+    "url": "/static/css/main.ff2b04a6.chunk.css"
   },
   {
-    "revision": "a0fcbd98bc55fe1537ed",
-    "url": "/static/js/main.a0fcbd98.chunk.js"
+    "revision": "c2a92d8a2110197b548c",
+    "url": "/static/js/main.c2a92d8a.chunk.js"
   },
   {
-    "revision": "4567e6b4a7bd4ab0b748",
-    "url": "/static/js/1.4567e6b4.chunk.js"
+    "revision": "128fd6128b9459c5ab86",
+    "url": "/static/js/1.128fd612.chunk.js"
   },
   {
-    "revision": "fa995134b18ed665e1eb",
-    "url": "/static/css/2.2bc2dd3b.chunk.css"
+    "revision": "479a1193e9d93312aa45",
+    "url": "/static/css/2.84b00b91.chunk.css"
   },
   {
-    "revision": "fa995134b18ed665e1eb",
-    "url": "/static/js/2.fa995134.chunk.js"
+    "revision": "479a1193e9d93312aa45",
+    "url": "/static/js/2.479a1193.chunk.js"
   },
   {
-    "revision": "7fdfdbc0af608bfdc703",
-    "url": "/static/js/runtime~main.7fdfdbc0.js"
+    "revision": "6a0e26500f60df0c05c0",
+    "url": "/static/js/runtime~main.6a0e2650.js"
   },
   {
     "revision": "6a11ec6212437875b9957e49a7bbe622",
@@ -116,11 +116,7 @@ self.__precacheManifest = [
     "url": "/static/media/vintage-wallpaper.1a90c1d9.webp"
   },
   {
-    "revision": "f98a403a62541e7d363c4d9451b141b6",
-    "url": "/static/media/myresume.f98a403a.pdf"
-  },
-  {
-    "revision": "7811c6a2776315a84fa3a565224c0b89",
+    "revision": "5a01590e7cd837d1c5582ad568a407c7",
     "url": "/index.html"
   }
 ];
