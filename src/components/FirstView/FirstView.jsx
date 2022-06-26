@@ -16,8 +16,8 @@ const FirstView = () => {
             </div>
             <div className="fv-text-container">
                 <h1 className="fadein">
-                    SDGsをITで<br />
-                    実現する
+                    ITでつなげる<br />
+                    SDGsでつながる
                 </h1>
             </div>
             <div className="fv-button-container">
