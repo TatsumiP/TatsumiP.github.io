@@ -2,7 +2,7 @@
 エンジニアポートフォリオサイト
 </h1>
 
-/*画像*/
+[portfolio-site-preview.png](https://github.com/TatsumiP/tatsumip.github.io/edit/master/src/img/portfolio-site-preview.png)
 
 ## サイトの概要
 - LP型のポートフォリオサイト。
