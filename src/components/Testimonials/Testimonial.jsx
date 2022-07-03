@@ -26,7 +26,7 @@ const Testimonial = () => {
         {
             img: profilePic1,
             review:
-                "PomPom PomPom PomPomPien..."
+                "夫のいい点を三つ挙げてみました。一つは怒っている時も態度に表さず、人や物に当たらない所です。一つは見知らぬ人に話しかけられても朗らかに会話を楽しめる所です。一つは新しい料理に楽しそうに挑戦する好奇心旺盛な所です。    瓜生淑子"
         },
         {
             img: profilePic2,

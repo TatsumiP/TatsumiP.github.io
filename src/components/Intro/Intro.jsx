@@ -1,7 +1,9 @@
 import React from "react";
 import "./Intro.css";
 import atom from "../../img/atom.png";
+import myimage1 from "../../img/myimage1.jpg";
 import myimage3 from "../../img/myimage3.jpg";
+import mysonimage from "../../img/mysonimage.jpeg";
 import Github from "../../img/github.png";
 import Instagram from "../../img/instagram.png";
 import { Link } from "react-scroll";
@@ -67,10 +69,11 @@ const Intro = () => {
           </div>
           {/* right image side */}
           <div className="i-small-container">
-            {/* <img src={myimage3} alt="myimage" /> */}
+            <img src={myimage1} alt="myimage" />
           </div>
         </div>
       </div>
+      <div className="module-spacer-s"/>
 
       {/* ----- third-flex-area ----- */}
       <div className="i-third-wrapper">
@@ -78,7 +81,7 @@ const Intro = () => {
 
           {/* left text side */}
           <div className="i-small-container">
-            {/* <img src={myimage3} alt="myimage" /> */}
+            <img src={mysonimage} alt="mysonimage" />
           </div>
 
           {/* right image side */}

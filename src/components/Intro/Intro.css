@@ -199,7 +199,8 @@
   }
 
   .i-second-wrapper .i-small-container  {
-    display: none;
+    display: block;
+    left: -17px;
   }
 
   .i-second-wrapper .i-large-container  {
