@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "33c1ebbbbf482ccdd004",
-    "url": "/static/css/main.ff2b04a6.chunk.css"
+    "revision": "50f8babf5d25aa29fc7d",
+    "url": "/static/css/main.75e25279.chunk.css"
   },
   {
-    "revision": "33c1ebbbbf482ccdd004",
-    "url": "/static/js/main.33c1ebbb.chunk.js"
+    "revision": "50f8babf5d25aa29fc7d",
+    "url": "/static/js/main.50f8babf.chunk.js"
   },
   {
-    "revision": "128fd6128b9459c5ab86",
-    "url": "/static/js/1.128fd612.chunk.js"
+    "revision": "6d1c687f73f1a0446a07",
+    "url": "/static/js/1.6d1c687f.chunk.js"
   },
   {
-    "revision": "479a1193e9d93312aa45",
-    "url": "/static/css/2.84b00b91.chunk.css"
+    "revision": "b273476675a55807d965",
+    "url": "/static/css/2.5f361f95.chunk.css"
   },
   {
-    "revision": "479a1193e9d93312aa45",
-    "url": "/static/js/2.479a1193.chunk.js"
+    "revision": "b273476675a55807d965",
+    "url": "/static/js/2.b2734766.chunk.js"
   },
   {
-    "revision": "6a0e26500f60df0c05c0",
-    "url": "/static/js/runtime~main.6a0e2650.js"
+    "revision": "9d519b82a488b3016fee",
+    "url": "/static/js/runtime~main.9d519b82.js"
   },
   {
     "revision": "6a11ec6212437875b9957e49a7bbe622",
@@ -56,8 +56,16 @@ self.__precacheManifest = [
     "url": "/static/media/FirstViewEffect.f63ff2ed.png"
   },
   {
+    "revision": "e61efaad55f14a0ac7cfa5b2cbee4986",
+    "url": "/static/media/myimage1.e61efaad.jpg"
+  },
+  {
     "revision": "7d4c676debeff74acfb3774ecd4c3b77",
     "url": "/static/media/myimage3.7d4c676d.jpg"
+  },
+  {
+    "revision": "020fd9ead5152d5855953fdaa5f9e569",
+    "url": "/static/media/mysonimage.020fd9ea.jpeg"
   },
   {
     "revision": "738f4798f9b60f9f125e929e319263a9",
@@ -108,6 +116,10 @@ self.__precacheManifest = [
     "url": "/static/media/unity.5b697a2e.png"
   },
   {
+    "revision": "c5e2c687ac5108099c4ab8f56945f8c4",
+    "url": "/static/media/profile1.c5e2c687.jpg"
+  },
+  {
     "revision": "eb373e5d81f466262ff73eaffbc559ca",
     "url": "/static/media/wave.eb373e5d.png"
   },
@@ -116,7 +128,7 @@ self.__precacheManifest = [
     "url": "/static/media/vintage-wallpaper.1a90c1d9.webp"
   },
   {
-    "revision": "2e90d01d7c0ec842d5ca4b8765111265",
+    "revision": "4f5cc725bd3b27b37f4ffa9553b25ac0",
     "url": "/index.html"
   }
 ];
