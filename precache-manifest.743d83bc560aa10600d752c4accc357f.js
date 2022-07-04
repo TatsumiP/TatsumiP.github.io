@@ -128,7 +128,7 @@ self.__precacheManifest = [
     "url": "/static/media/vintage-wallpaper.1a90c1d9.webp"
   },
   {
-    "revision": "4f5cc725bd3b27b37f4ffa9553b25ac0",
+    "revision": "25f53114b92b58d646cea8bf98f959d5",
     "url": "/index.html"
   }
 ];
